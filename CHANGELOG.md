@@ -1,8 +1,96 @@
-## [2.3.3-alpha.1](https://github.com/ar-io/ar-io-sdk/compare/v2.3.2...v2.3.3-alpha.1) (2024-10-17)
+## [2.5.3-alpha.1](https://github.com/ar-io/ar-io-sdk/compare/v2.5.2...v2.5.3-alpha.1) (2024-11-26)
 
 
 ### Bug Fixes
 
+* **ant lua id:** update ant lua id ([54ff68b](https://github.com/ar-io/ar-io-sdk/commit/54ff68b03842f8382bbdfd28902f033857f25a39))
+
+## [2.5.2](https://github.com/ar-io/ar-io-sdk/compare/v2.5.1...v2.5.2) (2024-11-25)
+
+
+### Bug Fixes
+
+* **io:** fix tag for `requestPrimaryName` API ([bdaeaaf](https://github.com/ar-io/ar-io-sdk/commit/bdaeaafb8b07383711751e334dd7f679617e8a01))
+* **io:** updated types and fixed apis for primary name requests ([a297628](https://github.com/ar-io/ar-io-sdk/commit/a2976282247403b533ac129eaf76bd35c7af56cc))
+* **readme:** update readme with correct param for approving primary name ([1dcbcc5](https://github.com/ar-io/ar-io-sdk/commit/1dcbcc5a231581ec2bd2a3bc9815853aac7bbdf5))
+
+## [2.5.1](https://github.com/ar-io/ar-io-sdk/compare/v2.5.0...v2.5.1) (2024-11-22)
+
+### Bug Fixes
+
+* **primary names:** update type for getPrimaryNameRequest ([bdd3a9f](https://github.com/ar-io/ar-io-sdk/commit/bdd3a9f63f90688453208804c242622b1f583ec7))
+
+# [2.5.0](https://github.com/ar-io/ar-io-sdk/compare/v2.4.0...v2.5.0) (2024-11-22)
+
+
+### Bug Fixes
+
+* **ant:** revert breaking change on records for ANT ([58db878](https://github.com/ar-io/ar-io-sdk/commit/58db8780797cbdde59729431d5a70d71bf9e166b))
+* **arns:** update reserved names to pagaination api ([dacf0c5](https://github.com/ar-io/ar-io-sdk/commit/dacf0c52ac4f77d50e8baf914e520f4c2a8df717))
+* **cjs:** remove ant validation from cjs test ([50b8290](https://github.com/ar-io/ar-io-sdk/commit/50b8290c8d0ecea690fbe317ff4f7703f12cdba6))
+* **errors:** we should be checking the result.Error as well as tags ([7ffe131](https://github.com/ar-io/ar-io-sdk/commit/7ffe131f22bf5aad978ea82e7e81d05ab750b728))
+* **eslint:** remove unnecessary rule config ([03a0552](https://github.com/ar-io/ar-io-sdk/commit/03a05520ab236af7ab7e500990e92157b5adb68f))
+* **getHandlers:** remove redundant check ([b0c9548](https://github.com/ar-io/ar-io-sdk/commit/b0c9548d6c569d43385636ad942e2999b3f99225))
+* **handlers:** update handler name list ([251695e](https://github.com/ar-io/ar-io-sdk/commit/251695ef31304f8b96be230b0cc6a932b33f0f1e))
+* **id and test:** add test for old ant and add lua source id for new code ([77601b2](https://github.com/ar-io/ar-io-sdk/commit/77601b2fc9117a2a4b9ff1226fa3f329e8a74e1d))
+* **io:** add `getDelegations` to `AoIORead` ([7c30c9b](https://github.com/ar-io/ar-io-sdk/commit/7c30c9b6dda8014575ba4f34f59fc4844c0ffe7a))
+* **io:** use helper for computing timestamp ([ffe6ff3](https://github.com/ar-io/ar-io-sdk/commit/ffe6ff3105fe0add3d13d505170237b06750b279))
+* **lint:** ignore underscore vars ([2c84d3d](https://github.com/ar-io/ar-io-sdk/commit/2c84d3d9f11cfcdfd6d487b65566e674be0704cc))
+* **lint:** update lint rule for ignore args ([136e44a](https://github.com/ar-io/ar-io-sdk/commit/136e44af9cb851ee54cac336e32614689a4809e6))
+* **lint:** update linter to allow nullable string ([b985139](https://github.com/ar-io/ar-io-sdk/commit/b985139a40bed20c49eb9f25c016153ac6cfba6c))
+* **lua id:** rollback lua id ([89b8392](https://github.com/ar-io/ar-io-sdk/commit/89b83925778a3a9528f8a61c2c542cadb7bac0f8))
+* **primary:** add additional ANT handlers for primary names ([c98b136](https://github.com/ar-io/ar-io-sdk/commit/c98b13632fe05e960b166098fb3c8a060a017746))
+* **readme:** make api headers h4 ([395f7fb](https://github.com/ar-io/ar-io-sdk/commit/395f7fb01927cc0a247b521d0f992eef00278348))
+* **readme:** update readme with new apis on ant class ([bce76d2](https://github.com/ar-io/ar-io-sdk/commit/bce76d2c4315ad8ab31e604ac23680c04d7f7141))
+* **readme:** use real outputs in example ([1529f79](https://github.com/ar-io/ar-io-sdk/commit/1529f795824a7b8352a47d2ee4f8a9048ba4fb91))
+* **setLogo:** call param txId instead of logo ([cda5e1d](https://github.com/ar-io/ar-io-sdk/commit/cda5e1d892d84a2160f72874833f518024aebf5d))
+* **source id:** name the source id tags the same on evolve and spawn ([058c829](https://github.com/ar-io/ar-io-sdk/commit/058c82909ed424c1ae6fd07b8abb955bea5053ba))
+* **spawn:** add lua source id to spawn ([8850ed2](https://github.com/ar-io/ar-io-sdk/commit/8850ed2eb83a4a52e2e41ce8ef47628ba612a43b))
+* **test:** remove old test for validate ([14a77dc](https://github.com/ar-io/ar-io-sdk/commit/14a77dc61425c3c85ce11815adf719473d35c2e6))
+* **tests:** add test for old ant ([0489cb6](https://github.com/ar-io/ar-io-sdk/commit/0489cb6924b68c19b8791cc47e0f7c1589be842f))
+* **tests:** add unit tests for util and move parsing of records to uitl ([2d08c9a](https://github.com/ar-io/ar-io-sdk/commit/2d08c9a18f1916db3d64be5af494fb4013b347c5))
+* **tests:** update ANT in tests to use v8 ant ([1eff8a9](https://github.com/ar-io/ar-io-sdk/commit/1eff8a97ab7179fb1d4e0ff68924480f360ee52c))
+* **types:** modify AoDelegation type ([18bb755](https://github.com/ar-io/ar-io-sdk/commit/18bb755c8a688060ea19ae9711888d0d53f1041f))
+* **types:** restructure type construction ([2ef04db](https://github.com/ar-io/ar-io-sdk/commit/2ef04db418874feadfc010e79efec5b3d7866dd7))
+* **validation util:** remove validation util ([d803e59](https://github.com/ar-io/ar-io-sdk/commit/d803e5996ee847fc30414e00a8cc2c8ac04de1be))
+* **validator:** add comments and reformat into a more clear loop for creating the validation config ([ea3e70c](https://github.com/ar-io/ar-io-sdk/commit/ea3e70c0b5eac258736f0e9088f3c4cdf1f7d767))
+* **vaults:** add API for gateway vaults ([923b2cd](https://github.com/ar-io/ar-io-sdk/commit/923b2cd4d604d5a3e5d773390feda278d41dbd00))
+
+
+### Features
+
+* **delegations:** add getter for staked and vaulted delegations PE-7093 ([7182942](https://github.com/ar-io/ar-io-sdk/commit/7182942ca737f86e94dc35423c71cd2bc6412f1d))
+* **delegations:** add SDK function to retrieve an address's delegations PE-7093 ([07c9107](https://github.com/ar-io/ar-io-sdk/commit/07c910786d4fd4d95b463a9eb28121149e66eb8a))
+* **getRecords:** update getRecords to return as flat array of objects ([b9808c1](https://github.com/ar-io/ar-io-sdk/commit/b9808c117cd55a1ce92eb338a07fc07395a867fd))
+* **io:** add `getAllowedDelegates` to IO ([7d143e0](https://github.com/ar-io/ar-io-sdk/commit/7d143e0e5b5d92fb647d1b91ad4c6b13ad0da04f))
+* **PE-6910:** support primary name APIs ([6ace606](https://github.com/ar-io/ar-io-sdk/commit/6ace6060f8b98e93229f4612cd976c463609ed92))
+* **PE-6910:** support primary name APIs ([82a5b44](https://github.com/ar-io/ar-io-sdk/commit/82a5b4414807447fe0ebb340f0085b5731cab0e3))
+* **redelegate stake:** init IO methods PE-7159 ([7539dd2](https://github.com/ar-io/ar-io-sdk/commit/7539dd2edd0e4eae0c08515e0a3001eacada647c))
+* **setLogo:** add set logo api to ant class ([c5812b1](https://github.com/ar-io/ar-io-sdk/commit/c5812b1bdeb66212f4ba398ba3c19645962a1725))
+* **util:** move validation util to ant class ([cad7149](https://github.com/ar-io/ar-io-sdk/commit/cad714987a37ed9cf5ee0246cc745faab1915e33))
+* **validation util:** simplify validation util ([cd57929](https://github.com/ar-io/ar-io-sdk/commit/cd579290d6b6230fcbe4274ee84eea5f27eb9108))
+* **validations:** add write validation util ([69fc131](https://github.com/ar-io/ar-io-sdk/commit/69fc13173daee4124e21f74aeab1ca85db5418f5))
+
+# [2.4.0](https://github.com/ar-io/ar-io-sdk/compare/v2.3.2...v2.4.0) (2024-11-12)
+
+
+### Bug Fixes
+
+* **ant:** add `reassignName` to ant implementation ([9e705a9](https://github.com/ar-io/ar-io-sdk/commit/9e705a995d454092b1ea415debba02a9e2efb487))
+* **auctions:** fix submitAuctionApi to accept type and years ([6780a80](https://github.com/ar-io/ar-io-sdk/commit/6780a80b06a0a3c3943839e0f89c7d7a7ccb083d))
+* **auctions:** update auction APIs and types ([5fd2ccc](https://github.com/ar-io/ar-io-sdk/commit/5fd2ccc5c5d781234eaddc10c005b928fbc0fb50))
+* **auctions:** update read APIs to fetch auctions, use vite example display active auction ([32001c2](https://github.com/ar-io/ar-io-sdk/commit/32001c2cfcaab4aa0e03aeee99888ba9e2efd6ba))
+* **auctions:** update types and add `intervalMs` ([bc21200](https://github.com/ar-io/ar-io-sdk/commit/bc212007ef065b5eb5af8face148da446dfb73cd))
+* corrected AoVaultData field to be startTimestamp ([b9888bf](https://github.com/ar-io/ar-io-sdk/commit/b9888bf19655b77bb07fe4240d30a9bb3328a076))
+* **delegates:** fixes type ([ae7be5c](https://github.com/ar-io/ar-io-sdk/commit/ae7be5caaa79f470eb9755c05c85467e98643d55))
+* **emitter:** do non strict checks on state in arns emitter ([6566a3c](https://github.com/ar-io/ar-io-sdk/commit/6566a3c06be654b6f71ef2646a6c2d441ac3755c))
+* **emitter:** provide strictness in constuctor ([060df05](https://github.com/ar-io/ar-io-sdk/commit/060df0534b2ab9a8bbd851e40d2fc9ecdcd37426))
+* **exports:** add exports to barrel file ([fec094e](https://github.com/ar-io/ar-io-sdk/commit/fec094e3095f54a2b14c6427dae50642bd5af16e))
+* **exports:** dont export http stuff) ([d6369aa](https://github.com/ar-io/ar-io-sdk/commit/d6369aa0a722abbe468eb0e73423b1b757dbf0ee))
+* **io:** consolidate `instantGatewayWithdrawal` and `instantGatewayWithdrawal` to just `instantWithdrawal`, update `cancelWithdrawal ([ea9f3eb](https://github.com/ar-io/ar-io-sdk/commit/ea9f3eb90843f1181b83d9f876b75a059efb8811))
+* **io:** include address in delegate type for gateway ([46ef1a7](https://github.com/ar-io/ar-io-sdk/commit/46ef1a7e12c6a1f54478dfe9ca0050dfa06d209f))
+* **lint:** add lint fix and missing bracket ([72446aa](https://github.com/ar-io/ar-io-sdk/commit/72446aa0c1bfa8c69faf7781022a098c0e57d960))
+* **PE-7080:** add apis for fetching paginated delegates ([e3d4af2](https://github.com/ar-io/ar-io-sdk/commit/e3d4af2e0ff39c8b96ac14e60d4929fb27b73ab6))
 * **schema:** add strict mode to ANT with default to false ([4864abf](https://github.com/ar-io/ar-io-sdk/commit/4864abf361ffb6fdef877f52833194beb228cfbf))
 * **schemas:** add passthrough on schema checks for ants ([9cb2776](https://github.com/ar-io/ar-io-sdk/commit/9cb2776da4a9886a1467abbf51b7c4f814bdb7a6))
 * **schemas:** add zod schemas and tests ([feba587](https://github.com/ar-io/ar-io-sdk/commit/feba5873e7efd47f314f5e22561d0d0e07c26908))
@@ -10,19 +98,36 @@
 * **schemas:** update ant schema and tests ([f3284ed](https://github.com/ar-io/ar-io-sdk/commit/f3284ed038cebc8ddacae3ac0de3f740dcf86106))
 * **schema:** update handlers schema ([6ec52e4](https://github.com/ar-io/ar-io-sdk/commit/6ec52e4b07b5731f9388239ada9fd0f64373b445))
 * **strict:** allow for passing in strict mode on apis ([e147220](https://github.com/ar-io/ar-io-sdk/commit/e14722032c79baefb9729fac2f5a328168797005))
+* **tag:** small tweak to instant tag ([663de6f](https://github.com/ar-io/ar-io-sdk/commit/663de6f04557549f010f12d435c303e051d00501))
 * **test:** correct params for get record ([f999c49](https://github.com/ar-io/ar-io-sdk/commit/f999c498192edc8da2419016ec5b3f7f27f6e728))
 * **tests:** add esm tests and remove redundant cjs tests ([95244ea](https://github.com/ar-io/ar-io-sdk/commit/95244ea820ac5970b5c4ee3abad92a765765df33))
 * **tests:** add js path on imports ([db1520a](https://github.com/ar-io/ar-io-sdk/commit/db1520a0f2dc9b5045ce0db56f46fddf7456474d))
 * **tests:** simplify strict check on test ([62c9140](https://github.com/ar-io/ar-io-sdk/commit/62c914086b936b0c91cea757709941c1987f3ade))
+* **types:** add back delegates for AoGateway ([d337a74](https://github.com/ar-io/ar-io-sdk/commit/d337a7463458f27e079bf146033ba125add7a60a))
+* **types:** update types to match contract ([cb7d2b4](https://github.com/ar-io/ar-io-sdk/commit/cb7d2b49edf0e40734052078d9b5f5723e134876))
+* **types:** use generic on PageParms for sortBy, update delegate types ([7a1abc4](https://github.com/ar-io/ar-io-sdk/commit/7a1abc4869aed61a39cd99a313c64aff7c5e10de))
 * **util:** create schema parsing util to pretty format errors ([367537a](https://github.com/ar-io/ar-io-sdk/commit/367537a07b97180bfffee6cf0d6133cc03afdc4e))
 * **validations:** add zod schema validations on ant returns ([163c2f1](https://github.com/ar-io/ar-io-sdk/commit/163c2f188a362d1ffb41e7cb3ba6deee9fe5147e))
+* **withdrawls:** update API for cancelling withdrawls to allow delegate and operator withdrawls ([5cb680a](https://github.com/ar-io/ar-io-sdk/commit/5cb680affca0029fd10641c5e9d0b1d76f8902c9))
+
+
+### Features
+
+* **ant:** adds set-keywords and set-description methods for ants) ([3b260a2](https://github.com/ar-io/ar-io-sdk/commit/3b260a2188f909dff1b8c6c0f41228f2444c8652))
+* **ant:** support releasing of name of ANTs ([16363e8](https://github.com/ar-io/ar-io-sdk/commit/16363e88602baaa55ae767fd16b058817926c35a))
+* **arns:** add upgradeRecord API ([9c1726d](https://github.com/ar-io/ar-io-sdk/commit/9c1726dc6f6f5f87c3b8b3d027593a3c749932ee))
+* **auctions:** add auctions api to IO classes ([974897b](https://github.com/ar-io/ar-io-sdk/commit/974897b3458906dac325089d34c4ed45d780f368))
+* **delegates:** add instant delegate withdrawal for a fee ([4b4cb8f](https://github.com/ar-io/ar-io-sdk/commit/4b4cb8f6e6ee98c875541df21a0845f6069501f7))
+* **getVault:** init IO method PE-7081 ([0e3cde2](https://github.com/ar-io/ar-io-sdk/commit/0e3cde2b877268ae7589579a6a540262da828222))
+* **paginated vaults:** init SDK paginated vaults PE-7081 ([6d079f9](https://github.com/ar-io/ar-io-sdk/commit/6d079f903d1e583aadaabe98b8765fb9f1bd997a))
+* **paginated vaults:** use flat array over nested vaults PE-7081 ([e17cfb7](https://github.com/ar-io/ar-io-sdk/commit/e17cfb7478d1512fadf31c2105dd7b6deb0339bb))
 
 ## [2.3.2](https://github.com/ar-io/ar-io-sdk/compare/v2.3.1...v2.3.2) (2024-10-16)
 
 
 ### Bug Fixes
 
-* **io:** add getDemandFactor api ([feab461](https://github.com/ar-io/ar-io-sdk/commit/feab4612d4e95b0fea14a4e0fa9f17a5c57779e1))
+* **io:** add `getDemandFactor` api ([feab461](https://github.com/ar-io/ar-io-sdk/commit/feab4612d4e95b0fea14a4e0fa9f17a5c57779e1))
 * **io:** update `getTokenSupply` to type that returns full breakdown of tokens ([e790055](https://github.com/ar-io/ar-io-sdk/commit/e790055d03df0786c93db54d4d3294160fac1ad5))
 * **types:** add `totalEligibleGateways` to `AoEpochDistributionData` type ([9a35d39](https://github.com/ar-io/ar-io-sdk/commit/9a35d39ed811076a03a392cd5ac7b8f2ce878d98))
 * **types:** update gateways to include services ([a3fe5b4](https://github.com/ar-io/ar-io-sdk/commit/a3fe5b41725d1648f19d8e72d71e59d41bed91fe))

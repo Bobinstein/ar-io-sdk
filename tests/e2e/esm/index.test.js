@@ -1,6 +1,11 @@
+/**
+ * Ensure that npm link has been ran prior to running these tests
+ * (simply running npm run test:integration will ensure npm link is ran)
+ */
 import {
   ANT,
   ANTRegistry,
+  ANT_REGISTRY_ID,
   AOProcess,
   AoANTRegistryWriteable,
   AoANTWriteable,
@@ -30,10 +35,9 @@ const signers = [
   createAoSigner(new ArweaveSigner(testWallet)),
 ];
 
-/**
- * Ensure that npm link has been ran prior to running these tests
- * (simply running npm run test:integration will ensure npm link is ran)
- */
+const aoClient = connect({
+  CU_URL: 'http://localhost:6363',
+});
 
 const io = IO.init({
   process: new AOProcess({
@@ -389,13 +393,14 @@ describe('e2e tests', () => {
     });
 
     it('should be able to get ANT info', async () => {
-      const info = await ant.getInfo({ processId });
+      const info = await ant.getInfo();
       assert.ok(info);
     });
 
     it('should be able to get the ANT records', async () => {
-      const records = await ant.getRecords({ processId });
+      const records = await ant.getRecords();
       assert.ok(records);
+      // TODO: check enforcement of alphabetical order with '@' first
     });
 
     it('should be able to get a @ record from the ANT', async () => {
