@@ -5,7 +5,6 @@
 import {
   ANT,
   ANTRegistry,
-  ANT_REGISTRY_ID,
   AOProcess,
   AoANTRegistryWriteable,
   AoANTWriteable,
@@ -13,10 +12,9 @@ import {
   ArweaveSigner,
   IO,
   IOWriteable,
+  IO_DEVNET_PROCESS_ID,
   IO_TESTNET_PROCESS_ID,
-  Logger,
   createAoSigner,
-  ioDevnetProcessId,
 } from '@ar.io/sdk';
 import { connect } from '@permaweb/aoconnect';
 import { strict as assert } from 'node:assert';
@@ -41,7 +39,7 @@ const aoClient = connect({
 
 const io = IO.init({
   process: new AOProcess({
-    processId: IO_TESTNET_PROCESS_ID,
+    processId: process.env.IO_PROCESS_ID || IO_DEVNET_PROCESS_ID,
     ao: connect({
       CU_URL: 'http://localhost:6363',
     }),
@@ -449,28 +447,32 @@ describe('e2e tests', () => {
   describe('ArNSResolver', async () => {
     const resolver = new ArNSResolver({
       io,
+      // ao: aoClient,
     });
 
     it('should return the resolution data for a given name', async () => {
       const name = 'ardrive';
       const record = await io.getArNSRecord({ name });
-      const resolvedName = await resolver.resolveArNSName({
+      const resolvedName = await resolver.resolve({
         name: name,
       });
       assert.ok(resolvedName);
       assert.ok(resolvedName.processId === record.processId);
       assert.ok(resolvedName.name === name);
-      assert.ok(resolvedName.transactionId);
+      assert.ok(resolvedName.type === record.type);
+      assert.ok(resolvedName.txId);
     });
 
     it('should return the list of names associated with to a transaction id', async () => {
       const name = 'ardrive';
-      const resolvedName = await resolver.resolveArNSName({
+      const resolvedName = await resolver.resolve({
         name: name,
       });
-      const associatedNames = await resolver.lookupAssociatedArNSNames({
-        txId: resolvedName.transactionId,
+      console.log(resolvedName);
+      const associatedNames = await resolver.lookup({
+        txId: resolvedName.txId,
       });
+      console.log(associatedNames);
       assert.ok(associatedNames);
       assert.ok(associatedNames.length > 0);
       assert.ok(associatedNames.includes(name));

@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@alexsasharegan/simple-cache@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@alexsasharegan/simple-cache/-/simple-cache-3.3.3.tgz#6e17ea1caee06e62857c704bc14630735cf0dc16"
+  integrity sha512-SWLaNj75VckhB7tFmfD4vqORVKmwqCYiZTfdTLU87aMF9mkpHp1UeSNKM2axZZDTIDqx45msonjBYeMvhE+amQ==
+  dependencies:
+    safe-types "^4.17.0"
+
+"@ardrive/ardrive-promise-cache@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@ardrive/ardrive-promise-cache/-/ardrive-promise-cache-1.4.0.tgz#c9b260eabfb3344c6d7fe0b100c05d6a977d3227"
+  integrity sha512-S77u7ROUl+enHDZ5XJvcCoNR453Fmym8dG4jkwUcxI1GJ9OZ7+3bq6fRKiWLfJN9oZHmT/qGxKyJKYZj4PTwzw==
+  dependencies:
+    "@alexsasharegan/simple-cache" "^3.3.3"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.21.4", "@babel/code-frame@^7.22.13", "@babel/code-frame@^7.24.6":
   version "7.24.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.24.6.tgz#ab88da19344445c3d8889af2216606d3329f3ef2"
@@ -7780,6 +7794,11 @@ safe-stable-stringify@^2.3.1:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/safe-stable-stringify/-/safe-stable-stringify-2.4.3.tgz#138c84b6f6edb3db5f8ef3ef7115b8f55ccbf886"
   integrity sha512-e2bDA2WJT0wxseVd4lsDP4+3ONX6HpMXQa1ZhFQ7SU+GjvORCmShbCMltrtIDfkYhVHrOcPtj+KhmDBdPdZD1g==
+
+safe-types@^4.17.0:
+  version "4.27.0"
+  resolved "https://registry.yarnpkg.com/safe-types/-/safe-types-4.27.0.tgz#6016efdf32ddc29b052f77d15ce3fa4c734b8841"
+  integrity sha512-6FY9SBSfWIaLKIi+wHKwdKHQy1rJMUdlsZVleXbMX35bSC2j5Jul4o59Sl7S+argcFCQXLurS0DC+CDFKA9cIw==
 
 "safer-buffer@>= 2.1.2 < 3.0.0", safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"

@@ -42,7 +42,7 @@ export class AOProcess implements AOContract {
 
   async read<K>({
     tags,
-    retries = 3,
+    retries = 1,
   }: {
     tags?: Array<{ name: string; value: string }>;
     retries?: number;
@@ -113,7 +113,7 @@ export class AOProcess implements AOContract {
     tags,
     data,
     signer,
-    retries = 3,
+    retries = 1,
   }: {
     tags: Array<{ name: string; value: string }>;
     data?: string | undefined;

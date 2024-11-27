@@ -120,6 +120,7 @@
     "vite-plugin-node-polyfills": "^0.22.0"
   },
   "dependencies": {
+    "@ardrive/ardrive-promise-cache": "^1.4.0",
     "@dha-team/arbundles": "^1.0.1",
     "@permaweb/aoconnect": "^0.0.57",
     "arweave": "1.14.4",
