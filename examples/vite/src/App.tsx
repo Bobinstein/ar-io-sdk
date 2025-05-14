@@ -27,8 +27,11 @@ const ario = ARIO.testnet();
 // @ts-ignore
 const wayfinder = new Wayfinder<typeof fetch>({
   httpClient: fetch,
-  router: new StaticGatewayRouter({
-    gateway: 'https://permagate.io',
+  router: new PriorityGatewayRouter({
+    ario: ARIO.mainnet(),
+    sortBy: 'operatorStake',
+    sortOrder: 'desc',
+    limit: 10,
   }),
   verifier: new HashVerifier({
     trustedHashProvider: new TrustedGatewaysHashProvider({

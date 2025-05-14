@@ -65,3 +65,12 @@ export interface DataRootProvider {
   getDataRoot: ({ txId }: { txId: string }) => Promise<string>;
 }
 // TODO: add an offset provider that returns offsets for data items so we can use them to verify the signatures of a data item within a bundle
+export interface DataClassifier {
+  /**
+   * Classifies a data item as a bundle or a data item.
+   *
+   * @param txId - The txId of the data
+   * @returns 'bundle' or 'data-item'
+   */
+  classify: ({ txId }: { txId: string }) => Promise<'bundle' | 'data-item'>;
+}
